@@ -52,13 +52,20 @@ const Form = ({
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!validate()) return;
-
-    Swal.fire({
-      icon: "success",
-      title: "Success",
-      text: "Form submitted successfully!",
-    });
+    if (!validate()) {
+      Swal.fire({
+        icon: "warning",
+        title: "warning",
+        text: "Fill Some Details",
+      });
+      return;
+    } else {
+      Swal.fire({
+        icon: "success",
+        title: "Success",
+        text: "Form submitted successfully!",
+      });
+    }
   };
 
   return (

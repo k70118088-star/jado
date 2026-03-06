@@ -4,7 +4,7 @@ import Form from "./common/Form";
 const ContactUs = () => {
   return (
     <div
-      className="flex relative items-center justify-center m-auto w-full max-w-360 lg:h-197 px-4 md:px-6"
+      className="flex relative items-center justify-center m-auto w-full lg:h-197 px-4 md:px-6"
       style={{
         backgroundImage: "url('/assets/Heroimg.webp')",
         backgroundSize: "cover",
@@ -14,8 +14,8 @@ const ContactUs = () => {
     >
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full max-w-285 scale-y-[-1] gap-12 lg:gap-0 py-16 lg:py-0">
         
-        <div className="w-full lg:max-w-[430px]">
-          <li className="text-[#EF7D00] text-sm md:text-base font-semibold leading-[100%] list-none">
+        <div className="w-full lg:max-w-107.5">
+          <li className="text-[#EF7D00] text-sm md:text-base font-semibold leading-[100%] ">
             Contact Us
           </li>
 
@@ -45,7 +45,7 @@ const ContactUs = () => {
           </h3>
         </div>
 
-        <div className="w-full lg:max-w-[516px]">
+        <div className="w-full lg:max-w-129">
           <Form
             formCss={"w-full"}
             inputCss={"px-4 py-3 rounded-[12px] bg-[#f9f9f9] w-full"}

@@ -4,11 +4,11 @@ import { Industries } from "../utils/Data";
 
 const SubjectAreas = () => {
   return (
-    <div className="bg-[#1D1F26] max-w-360 flex items-center justify-center m-auto px-4 md:px-6">
+    <div className="bg-[#1D1F26]  flex items-center justify-center m-auto px-4 md:px-6">
       <div className="max-w-285 m-auto mt-16 md:mt-20 lg:mt-25 mb-20 lg:mb-30 w-full">
         
         <div className="flex flex-col items-center justify-center">
-          <li className="text-[#EF7D00] font-semibold text-sm md:text-base leading-[100%] list-none">
+          <li className="text-[#EF7D00] font-semibold text-sm md:text-base leading-[100%] ">
             Subject Areas
           </li>
 

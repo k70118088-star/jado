@@ -6,7 +6,7 @@ import Button from "./common/Button";
 const Hero = () => {
   return (
     <div
-      className="flex relative items-center justify-center m-auto w-full max-w-360 lg:h-180 px-4 md:px-6"
+      className="flex relative items-center justify-center m-auto w-full  lg:h-180 px-4 md:px-6"
       style={{
         backgroundImage: "url('/assets/Heroimg.webp')",
         backgroundSize: "cover",
@@ -19,7 +19,7 @@ const Hero = () => {
 
       <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-285 gap-10 lg:gap-0 py-16 lg:py-0">
         
-        <div className="w-full lg:max-w-[481px]">
+        <div className="w-full lg:max-w-120.25">
           <div className="flex max-w-fit items-center gap-2 bg-[#EF7D0014] px-4 py-2 rounded-full">
             <Star />
             <p className="font-semibold text-[14px] md:text-[16px] text-[#EF7D00]">
@@ -31,7 +31,7 @@ const Hero = () => {
             Breaking Language Barriers Across the Whole World
           </h1>
 
-          <p className="font-normal text-sm md:text-base leading-[150%] text-[#4C4C4C] mt-4 max-w-[481px]">
+          <p className="font-normal text-sm md:text-base leading-[150%] text-[#4C4C4C] mt-4 max-w-120.25">
             Breaking language barriers with precision, expertise, and
             cutting-edge technology. We deliver accurate translations across
             100+ languages, tailored to your industry needs.

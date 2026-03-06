@@ -3,7 +3,7 @@ import { Email, Facebook, Insta, Linkedin, PageLogo, Phone, X } from "../utils/i
 
 const Footer = () => {
   return (
-    <div className="max-w-360 m-auto flex flex-col justify-center items-center bg-[#F9F9F9] px-4 md:px-6">
+    <div className=" m-auto flex flex-col justify-center items-center bg-[#F9F9F9] px-4 md:px-6">
       
       <div className="max-w-285 flex flex-col lg:flex-row items-start lg:items-center justify-between w-full mt-16 lg:mt-25 gap-10 lg:gap-0">
         
