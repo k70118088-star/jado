@@ -55,7 +55,6 @@ const Form = ({
     e.preventDefault();
 
     if (!validate()) {
-     
       return;
     } else {
       Swal.fire({
@@ -80,7 +79,9 @@ const Form = ({
 
         {fields.map((field, index) => (
           <div key={index} className="flex flex-col gap-2">
-            <label className="font-normal text-base leading-[150%] text-[#1D1F26]">{field.label}</label>
+            <label className="font-normal text-base leading-[150%] text-[#1D1F26]">
+              {field.label}
+            </label>
 
             {field.type === "textarea" ? (
               <>
