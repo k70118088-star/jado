@@ -8,7 +8,7 @@ const OurServices = () => {
   return (
     <div className="max-w-360 flex items-center justify-center m-auto mt-20 lg:mt-37.5 px-4 md:px-6">
       <div className="max-w-285 w-full">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 max-w-285">
+        <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-4 max-w-285">
           <h2 className="max-w-100.5 font-normal text-3xl md:text-4xl lg:text-5xl leading-[120%] text-[#1D1F26]">
             Translation Solutions for Every Need
           </h2>

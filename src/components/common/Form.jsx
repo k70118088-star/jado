@@ -36,7 +36,7 @@ const Form = ({
       const value = formData[field.name];
 
       if (!value || value.trim() === "") {
-        newErrors[field.name] = `${field.label} is required`;
+        newErrors[field.name] = `${field.name} is required`;
       }
 
       if (field.type === "email" && value) {
@@ -70,17 +70,17 @@ const Form = ({
   };
 
   return (
-    <div className="p-2 z-50 bg-white/30 backdrop-blur-[10px] rounded-2xl shadow-[10px_10px_20px_0px_#00000033]">
+    <div className="p-2 z-50 max-w-129 bg-white/30 backdrop-blur-[10px] rounded-2xl shadow-[10px_10px_20px_0px_#00000033]">
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className={`${formCss} p-3 flex flex-col gap-4 bg-white rounded-2xl`}
+        className={`${formCss} p-4  flex flex-col gap-3 bg-white rounded-2xl`}
       >
         {title && <span className={`${titleCss}`}>{title}</span>}
 
         {fields.map((field, index) => (
-          <div key={index} className="flex flex-col gap-1">
-            <label>{field.label}</label>
+          <div key={index} className="flex flex-col gap-2">
+            <label className="font-normal text-base leading-[150%] text-[#1D1F26]">{field.label}</label>
 
             {field.type === "textarea" ? (
               <>

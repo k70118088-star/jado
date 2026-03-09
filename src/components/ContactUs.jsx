@@ -21,7 +21,7 @@ const ContactUs = () => {
             Contact Us
           </p>
 
-          <h1 className="font-normal text-[36px] md:text-[48px] lg:text-[64px] leading-[120%] text-[#010101] mt-4 max-w-107.5">
+          <h1 className="font-normal text-[36px] md:text-[48px]  leading-[120%] text-[#1D1F26] mt-4 max-w-107.5">
             Let's Start Your Translation Project
           </h1>
 
@@ -53,7 +53,7 @@ const ContactUs = () => {
             inputCss={"px-4 py-3 rounded-[12px] bg-[#f9f9f9] w-full"}
             titleCss={"text-base font-semibold"}
             textareaCss={
-              "h-[131px] px-4 py-3 bg-[#f9f9f9] rounded-[12px] w-full"
+              "h-[131px] px-4 py-3 bg-[#f9f9f9] resize-none rounded-[12px] w-full"
             }
             fields={[
               {

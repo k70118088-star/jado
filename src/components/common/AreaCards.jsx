@@ -7,7 +7,7 @@ const AreaCards = ({ subjecticons, text }) => {
       <p className="w-10 h-10 ">
         <Icons2 icon={subjecticons} />
       </p>
-      <h3 className="mt-4 font-normal text-2xl leading-[120%] text-[#FEFEFE]">
+      <h3 className="mt-4 font-normal  text-2xl leading-[120%] text-[#FEFEFE]">
         {text}
       </h3>
     </div>

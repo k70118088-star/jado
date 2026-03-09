@@ -6,7 +6,7 @@ export const Services = [
     tag2: "Industry experts",
     tag3: "Technical accuracy",
     description:
-      "Industry-specific translations by subject matter experts. We understand the nuances of technical, legal, medical, and financial terminology to ensure accuracy and context.",
+      "Industry-specific translations by subject matter experts. We understand the nuances of technical, legal, medical, and financial terminology to enure accuracy and context.",
   },
   {
     icon: "certifiedTranslations",

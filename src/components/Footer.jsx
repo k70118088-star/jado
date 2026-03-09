@@ -8,31 +8,47 @@ const Footer = () => {
       <div className="max-w-285 flex flex-col lg:flex-row items-start lg:items-center justify-between w-full mt-16 lg:mt-25 gap-10 lg:gap-0">
         <div>
           <a href="">
-            <Icons2 icon={"pageLogo"}/>          </a>
+            <Icons2 icon={"pageLogo"} />
+          </a>
 
-          <div className="w-60.5 border border-[#1D1F26]/12 mt-4"></div>
+          <div className="w-60.5 border border-[#1D1F26]/12 mt-6"></div>
 
           <p className="text-[#4C4C4C] text-base font-normal leading-[150%] mt-6">
             Follow on
           </p>
 
-          <div className="flex items-center gap-3.5 mt-3.5">
-            <a href="">
+          <div className="flex items-center gap-2.5 mt-3.5">
+            <a
+              href=""
+              className="transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+            >
               <Icons2 icon={"insta"} />
             </a>
-            <a href="">
+
+            <a
+              href=""
+              className="transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+            >
               <Icons2 icon={"faceBook"} />
             </a>
-            <a href="">
+
+            <a
+              href=""
+              className="transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+            >
               <Icons2 icon={"linkedIn"} />
             </a>
-            <a href="">
+
+            <a
+              href=""
+              className="transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+            >
               <Icons2 icon={"twitter"} />
             </a>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-10 lg:flex lg:gap-20">
+        <div className="grid  grid-cols-2 sm:grid-cols-3 gap-10 lg:flex lg:gap-20">
           <div className="flex flex-col gap-4">
             <h4 className="text-[#1D1F26] text-base font-semibold leading-[100%]">
               Quick Links
@@ -87,14 +103,14 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex  flex-col gap-4">
             <h4 className="text-[#1D1F26] text-base font-semibold leading-[100%]">
               Contact
             </h4>
 
             <a
               href=""
-              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%] flex items-center gap-1"
+              className="text-[#4C4C4C] hover:underline text-sm min-[400px]:text-base font-normal cursor-pointer leading-[150%] flex items-center gap-1"
             >
               <span>
                 <Icons2 icon={"email"} />
@@ -104,7 +120,7 @@ const Footer = () => {
 
             <a
               href=""
-              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%] flex items-center gap-1"
+              className="text-[#4C4C4C] hover:underline text-sm min-[400px]:text-base font-normal cursor-pointer leading-[150%] flex items-center gap-1"
             >
               <span>
                 <Icons2 icon={"phone"} />
@@ -115,7 +131,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-t-[#1D1F261F] mt-16 lg:mt-25 text-center w-full">
+      <div className="border-t border-t-[#1D1F261F] mt-8 sm:mt-16 lg:mt-25 text-center w-full">
         <p className="text-[#4C4C4C] font-normal text-sm md:text-base leading-[150%] my-4">
           © JADO2025. All Rights Reserved.
         </p>
