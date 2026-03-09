@@ -1,5 +1,7 @@
 import React from "react";
 import Form from "./common/Form";
+import Icons2 from "./common/Icons2";
+
 
 const ContactUs = () => {
   return (
@@ -13,11 +15,11 @@ const ContactUs = () => {
       }}
     >
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full max-w-285 scale-y-[-1] gap-12 lg:gap-0 py-16 lg:py-0">
-        
         <div className="w-full lg:max-w-107.5">
-          <li className="text-[#EF7D00] text-sm md:text-base font-semibold leading-[100%] ">
+          <p className="text-[#EF7D00] text-base leading-[100%] font-semibold flex items-center gap-2 ">
+            <Icons2 icon={"dot"} />
             Contact Us
-          </li>
+          </p>
 
           <h1 className="font-normal text-[36px] md:text-[48px] lg:text-[64px] leading-[120%] text-[#010101] mt-4 max-w-107.5">
             Let's Start Your Translation Project
@@ -54,30 +56,35 @@ const ContactUs = () => {
               "h-[131px] px-4 py-3 bg-[#f9f9f9] rounded-[12px] w-full"
             }
             fields={[
-              { type: "text", placeholder: "John Doe", label: "Full Name" , name: "username" },
+              {
+                type: "text",
+                placeholder: "John Doe",
+                label: "Full Name",
+                name: "username",
+              },
               {
                 type: "email",
                 placeholder: "john123@gamil.com",
                 label: "Email Address",
-                name:"useremail"
+                name: "useremail",
               },
               {
                 type: "text",
                 placeholder: "John Technologies Limited",
                 label: "Company",
-                name: "usercompony"
+                name: "usercompony",
               },
               {
                 type: "textarea",
                 placeholder:
                   "We want to get our server reports translated from...",
                 label: "Message",
-                name: "usermessage"
+                name: "usermessage",
               },
             ]}
             buttonText={"Submit"}
             btcss={
-              "bg-[#EF7D00] py-[13.5px] w-full rounded-[12px] text-white"
+              "bg-[#EF7D00] hover:bg-white hover:text-[#ef7d00] border border-transparent hover:border-[#ef7d00] py-[13.5px] w-full rounded-[12px] text-white"
             }
           />
         </div>

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Button from "./Button";
 import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
 const Form = ({
   title,
@@ -12,6 +13,7 @@ const Form = ({
   inputCss,
   textareaCss,
 }) => {
+  const form = useRef();
   const [formData, setFormData] = useState({});
   const [errors, setErrors] = useState({});
 
@@ -53,11 +55,7 @@ const Form = ({
     e.preventDefault();
 
     if (!validate()) {
-      Swal.fire({
-        icon: "warning",
-        title: "warning",
-        text: "Fill Some Details",
-      });
+     
       return;
     } else {
       Swal.fire({
@@ -65,14 +63,18 @@ const Form = ({
         title: "Success",
         text: "Form submitted successfully!",
       });
+      emailjs.sendForm("service_qpy4s2h", "template_a6n0sok", form.current, {
+        publicKey: "72MWNrEJtBA43LUiv",
+      });
     }
   };
 
   return (
-    <div className="p-2 z-40 bg-white/30 backdrop-blur-[10px] rounded-2xl shadow-[10px_10px_20px_0px_#00000033]">
+    <div className="p-2 z-50 bg-white/30 backdrop-blur-[10px] rounded-2xl shadow-[10px_10px_20px_0px_#00000033]">
       <form
+        ref={form}
         onSubmit={handleSubmit}
-        className={`${formCss} p-4 flex flex-col gap-4 bg-white rounded-2xl`}
+        className={`${formCss} p-3 flex flex-col gap-4 bg-white rounded-2xl`}
       >
         {title && <span className={`${titleCss}`}>{title}</span>}
 
@@ -85,6 +87,7 @@ const Form = ({
                 <textarea
                   className={`${textareaCss}`}
                   placeholder={field.placeholder}
+                  name={field.name}
                   value={formData[field.name] || ""}
                   onChange={(e) => handleChange(e, field.name)}
                 ></textarea>
@@ -97,6 +100,7 @@ const Form = ({
             ) : (
               <>
                 <input
+                  name={field.name}
                   className={`${inputCss}`}
                   type={field.type}
                   placeholder={field.placeholder}

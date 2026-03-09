@@ -1,14 +1,14 @@
 import React from "react";
-import { Email, Facebook, Insta, Linkedin, PageLogo, Phone, X } from "../utils/icons";
+
+import Icons2 from "./common/Icons2";
 
 const Footer = () => {
   return (
     <div className=" m-auto flex flex-col justify-center items-center bg-[#F9F9F9] px-4 md:px-6">
-      
       <div className="max-w-285 flex flex-col lg:flex-row items-start lg:items-center justify-between w-full mt-16 lg:mt-25 gap-10 lg:gap-0">
-        
         <div>
-          <PageLogo />
+          <a href="">
+            <Icons2 icon={"pageLogo"}/>          </a>
 
           <div className="w-60.5 border border-[#1D1F26]/12 mt-4"></div>
 
@@ -17,35 +17,54 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-3.5 mt-3.5">
-            <Insta />
-            <Facebook />
-            <Linkedin />
-            <X />
+            <a href="">
+              <Icons2 icon={"insta"} />
+            </a>
+            <a href="">
+              <Icons2 icon={"faceBook"} />
+            </a>
+            <a href="">
+              <Icons2 icon={"linkedIn"} />
+            </a>
+            <a href="">
+              <Icons2 icon={"twitter"} />
+            </a>
           </div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-10 lg:flex lg:gap-20">
-          
           <div className="flex flex-col gap-4">
             <h4 className="text-[#1D1F26] text-base font-semibold leading-[100%]">
               Quick Links
             </h4>
 
-            <p className="text-[#4C4C4C] text-base font-normal cursor-pointer leading-[150%]">
+            <a
+              href=""
+              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%]"
+            >
               About us
-            </p>
+            </a>
 
-            <p className="text-[#4C4C4C] text-base font-normal cursor-pointer leading-[150%]">
+            <a
+              href=""
+              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%]"
+            >
               Services
-            </p>
+            </a>
 
-            <p className="text-[#4C4C4C] text-base font-normal cursor-pointer leading-[150%]">
+            <a
+              href=""
+              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%]"
+            >
               Subject Areas
-            </p>
+            </a>
 
-            <p className="text-[#4C4C4C] text-base font-normal cursor-pointer leading-[150%]">
+            <a
+              href=""
+              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%]"
+            >
               Contact us
-            </p>
+            </a>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -53,13 +72,19 @@ const Footer = () => {
               Legal
             </h4>
 
-            <p className="text-[#4C4C4C] text-base font-normal cursor-pointer leading-[150%]">
+            <a
+              href=""
+              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%]"
+            >
               Terms & Conditions
-            </p>
+            </a>
 
-            <p className="text-[#4C4C4C] text-base font-normal cursor-pointer leading-[150%]">
+            <a
+              href=""
+              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%]"
+            >
               Privacy Policy
-            </p>
+            </a>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -67,21 +92,25 @@ const Footer = () => {
               Contact
             </h4>
 
-            <p className="text-[#4C4C4C] text-base font-normal cursor-pointer leading-[150%] flex items-center gap-1">
-              
+            <a
+              href=""
+              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%] flex items-center gap-1"
+            >
               <span>
-               <Email />
+                <Icons2 icon={"email"} />
               </span>
               info@jado.com
-            </p>
+            </a>
 
-            <p className="text-[#4C4C4C] text-base font-normal cursor-pointer leading-[150%] flex items-center gap-1">
-             
+            <a
+              href=""
+              className="text-[#4C4C4C] hover:underline text-base font-normal cursor-pointer leading-[150%] flex items-center gap-1"
+            >
               <span>
-                <Phone />
+                <Icons2 icon={"phone"} />
               </span>
               +1 (555) 123-4567
-            </p>
+            </a>
           </div>
         </div>
       </div>
@@ -91,7 +120,6 @@ const Footer = () => {
           © JADO2025. All Rights Reserved.
         </p>
       </div>
-
     </div>
   );
 };

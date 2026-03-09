@@ -19,4 +19,4 @@ const Circle = ({ className, number, support, text }) => {
   )
 }
 
-export default Circle
+export default Circle;
